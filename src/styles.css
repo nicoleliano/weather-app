@@ -1,0 +1,96 @@
+body {
+  background: #00001a;
+}
+
+h2  {
+  font-size: 19px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+
+.card-body {
+  padding-left: 0px;
+}
+
+.container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 60%;
+}
+.current-time-of-day, 
+.current-temp, 
+.current-location {
+  margin: 0;
+}
+
+.current-location {
+  padding-bottom: 50px;
+}
+
+.day {
+  background: #000026;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+  font-size: 18px;
+}
+
+.description {
+  margin: 0;
+}
+
+.expectations {
+  padding: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.forecast {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.hourly {
+  background: #000026;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.hour-right {
+  text-align: left;
+}
+
+.humidity {
+  margin: 0;
+}
+
+.main {
+  background-image: url("images/nightBG.jpeg");
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 50px;
+  padding-bottom: 0px;
+  padding-right: 5px;
+}
+
+.search-button {
+  background: #000026;
+  color: #fff;
+}
+
+.wind {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  display: inline;
+}
