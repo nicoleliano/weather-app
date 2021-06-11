@@ -13,6 +13,10 @@ li {
   list-style-type: none;
 }
 
+.btn:hover {
+  background: #885DF1;
+}
+
 .current-conditions {
   padding-left: 0;
   color: rgba(39, 33, 66, .4);
@@ -57,7 +61,7 @@ li {
   font-size: 28px;
   font-weight: 400;
   position: relative;
-  top: -38px;
+  top: 19px;
 }
 
 .weather-app {
