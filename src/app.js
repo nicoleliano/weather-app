@@ -1,21 +1,34 @@
+function date(timestamp) {
+    let date = new Date(timestamp);
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let day = days[date.getDay()];
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
+    if (hours > 12) {
+      hours - 12;
+    };
+
+    return `${day} ${hours}:${minutes}`;
+};
+
 function displayWeather(response) {
-  let temperature = document.querySelector("#currentTemperature");
-  temperature.innerHTML = Math.round(response.data.main.temp);
-  
   let cityName = document.querySelector("#city");
-  cityName.innerHTML = response.data.name;
-
   let currentConditions = document.querySelector("#currentConditions");
-  currentConditions.innerHTML = response.data.weather[0].description;
-
-  let windSpeed = document.querySelector("#wind");
-  windSpeed.innerHTML = Math.round(response.data.wind.speed);
-  
+  let dayElement = document.querySelector("#day");
   let humidityOut = document.querySelector('#humidity');
-  humidityOut.innerHTML = Math.round(response.data.main.humidity);
+  let temperature = document.querySelector("#currentTemperature");
+  let windSpeed = document.querySelector("#wind");
   
-  console.log(response);
-}
+  cityName.innerHTML = response.data.name;
+  currentConditions.innerHTML = response.data.weather[0].description;
+  dayElement.innerHTML = date(response.data.dt * 1000);
+  humidityOut.innerHTML = Math.round(response.data.main.humidity);
+  temperature.innerHTML = Math.round(response.data.main.temp);
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
+
+  console.log(response.data);
+};
 
 let apiKey = `1b4633177fe295b77ce7fe4928580db0`;
 let city = `New York`;
