@@ -36,6 +36,23 @@ li {
   color: #f65282;
 }
 
+.forecast-date {
+  color: rgba(39, 33, 66, .4);
+}
+
+.forecast-temp-max {
+  color:#f65282;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.forecast-temp-min {
+  color: #f65282;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: .6;
+}
+
 .form {
   border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
@@ -69,7 +86,19 @@ li {
   border: 1px solid #F7F5FD;
   border-radius: 16px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
   max-width: 800px;
   padding: 40px;
+}
+
+.weather-forecast {
+  display: block;
+  margin: 40px 0;
+  text-align: center;
+  border-top: 1px solid #f9f7fe;
+  border-bottom: 1px solid #f9f7fe;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 75px;
+  max-width: 900px;
 }
