@@ -54,7 +54,7 @@ let forecast = response.data.daily;
 
 function getForecast(coord) {
   let apiKey = `1b4633177fe295b77ce7fe4928580db0`;
-  let units = `imperial`;
+  let units = `metric`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${apiKey}&units=${units}`;
   
   axios.get(apiUrl).then(displayForecast);
@@ -83,7 +83,7 @@ function displayWeather(response) {
 
 function search(city) {
   let apiKey = `1b4633177fe295b77ce7fe4928580db0`;
-  let units = `imperial`;
+  let units = `metric`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(displayWeather);
